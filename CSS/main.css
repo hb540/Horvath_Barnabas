@@ -1,0 +1,177 @@
+body
+}
+
+	*,*::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*--layout--*/
+	body{
+	display: grid;
+	grid-template-areas: 
+		"fejlec"
+		"kontent"
+		"lablec"
+	; 
+	grid-template-rows: max-content 1fr max-content;
+	min-height: 100vh;
+	}
+
+	header{
+		background-color: rgb(170,170,170);
+		grid-area: fejlec;
+		font-size: 2rem;
+		color: rgb(230,230,230);
+
+	}
+	main{
+		background-color: rgb(200,200,200);
+		grid-area: kontent;
+		margin: 15px;
+		font-size:2.5rem;
+		color: rgb(120,120,120);
+		text-align: center;
+		padding: 1rem;
+		}
+	footer{
+		background-color: darkgray;
+		grid-area: lablec;
+		text-align: right;
+	}
+/*--layout_end--*/
+
+/*--kozos_header--*/
+	.header_közép{
+		text-align: center;
+		margin: 8px;
+	}
+	ul{
+		overflow: hidden;
+		background-color: rgb(100,100,100);
+		display: block;
+		list-style: none;
+		top: 0;
+		text-align: center;
+		margin: 20px;
+	}
+	li{
+		padding: .5rem;
+	}
+	a{
+		font-size: 1.3rem;
+		text-decoration: none;
+		color: white;
+		cursor: pointer;
+	}
+	li a{
+		float: center;
+		padding: 0px 100px;
+		text-decoration: none;
+	}
+	li a:hover{
+		background-color: rgb(180,180,180);
+		text-decoration: underline;
+	}
+/*--kozos_header_end--*/
+
+/*--footer_kkozos--*/
+	.készítő{
+		text-align: left;
+		margin: 5px;
+		font-size: .8rem;
+	}
+/*--footer_kkozos_end--*/
+
+/*--Bemutatkozas--*/
+	.rólam{
+	height: 25%;
+	width: 25%;
+	object-fit: contain;
+	float: left;
+	margin: 1.5rem 1.5rem 1.5rem 0;
+
+	}
+	.Bemutatkozas{
+	font-size: 1.5rem;
+	text-align: left;
+	margin: 1.5rem;
+	color: rgb(40,40,40);
+	}
+	h2{
+	font-size: 3rem;
+	display: block;
+	}
+/*--Bemutatkozas_end--*/
+
+/*--Képek--*/
+	h3{
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+	.kep_kartya .kep img{
+		height: 100%;
+		width: 50%;
+		object-fit: contain;
+		padding: 1rem;
+	}
+	.kep_kartya .kep{
+		height: 30rem;
+		background-color: rgb(230,230,230);
+		text-align: center;
+		margin: 1rem;
+	}
+	.kep_kartya img:hover{
+		transition: transform 1s;
+		-ms-transform: scale(1.2);
+		-webkit-transform:scale(1.2);
+		transform: scale(1.2);
+	}
+
+	.felirat{
+		background-color: rgb(40,40,40);
+		color: rgb(200,200,200);
+		margin: 1.5rem;
+	}
+/*--Képek_end--*/
+
+/*--Elérhetőség--*/
+	.elérhetőség_szöveg{
+		font-size: 1.5rem;
+		padding: 1rem;
+		color: black;
+	}
+	.grid{
+		display: grid;
+		grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+		box-sizing: border-box;
+		grid-gap: 5%;
+		margin: 3rem;
+	}
+/*--Elérhetőség_end--*/
+
+/*--Tervezés--*/
+	.séma{
+		height: 30%;
+		width: 30%;
+		object-fit: contain;
+		float: left;
+		margin: 1rem 1rem 1rem 0;
+	}
+	.szoveg_alap{
+		font-size: 1.5rem;
+		text-align: left;
+		margin: 1.5rem;
+		color: black;
+	}
+	.cím{
+		font-size: 2.5rem;
+		background-color: black;
+		color: white;
+	}
+/*--Tervezés_end--*/
